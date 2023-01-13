@@ -1,0 +1,20 @@
+---
+properties:
+  gestures:
+    patternProperties:
+      ".*":
+        properties:
+          plan:
+            type: string
+            x-intellij-language-injection:
+              language: JavaScript
+              prefix: |
+                function known_value_brq() {
+                  return 0;
+                }
+              suffix: ''
+        required:
+          - plan
+        type: object
+    type: object
+type: object
