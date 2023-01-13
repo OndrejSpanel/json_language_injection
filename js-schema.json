@@ -4,7 +4,7 @@
       "type": "string",
       "x-intellij-language-injection" : {
         "language": "JavaScript",
-        "prefix" : "function known_value_brq() {return 0;};\n",
+        "prefix" : "function known_value_brq() {return 0;};",
         "suffix": ""
       }
     }
@@ -15,12 +15,7 @@
         ".*" : {
           "properties" : {
             "plan" : {
-              "type": "string",
-              "x-intellij-language-injection" : {
-                "language": "JavaScript",
-                "prefix" : "function known_value_brq() {return 0;}",
-                "suffix": ""
-              }
+              "$ref": "#/definitions/JavaScript"
             }
           },
           "required" : [
