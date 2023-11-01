@@ -1,6 +1,5 @@
 gestures:
-  agreement:
-    plan: |
-      let a = new MyPromise();
-      let b = a.then(() => "")
-      let c = b.then(s => s.length)
+  plan: |
+    let a = new MyPromise();
+    let b = a.then(() => "")
+    let c = b.then(s => s.length)

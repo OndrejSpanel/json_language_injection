@@ -1,26 +1,23 @@
 ---
 properties:
   gestures:
-    patternProperties:
-      ".*":
-        properties:
-          plan:
-            type: string
-            x-intellij-language-injection:
-              language: JavaScript
-              prefix: |
-                /** @template X */
-                class MyPromise {
-                  /**
-                   * @template U
-                   * @param {((value: X) => U) | ((value: X) => MyPromise<U>)} f
-                   * @returns {MyPromise<U>}
-                   */
-                   then(f){}
-                }
-              suffix: ''
-        required:
-          - plan
-        type: object
+    properties:
+      plan:
+        type: string
+        x-intellij-language-injection:
+          language: JavaScript
+          prefix: |
+            /** @template X */
+            class MyPromise {
+              /**
+               * @template U
+               * @param {((value: X) => U) | ((value: X) => MyPromise<U>)} f
+               * @returns {MyPromise<U>}
+               */
+               then(f){}
+            }
+          suffix: ''
+    required:
+      - plan
     type: object
 type: object
