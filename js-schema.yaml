@@ -9,8 +9,14 @@ properties:
             x-intellij-language-injection:
               language: JavaScript
               prefix: |
-                function known_value_brq() {
-                  return 0;
+                /** @template X */
+                class MyPromise {
+                  /**
+                   * @template U
+                   * @param {((value: X) => U) | ((value: X) => MyPromise<U>)} f
+                   * @returns {MyPromise<U>}
+                   */
+                   then(f){}
                 }
               suffix: ''
         required:

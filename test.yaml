@@ -1,9 +1,6 @@
 gestures:
   agreement:
     plan: |
-      let a = known_value_brq();
-      ctx => ctx
-  approach:
-    plan: (ctx, pars) => ctx
-  asking:
-    plan: ctx => ctx
+      let a = new MyPromise();
+      let b = a.then(() => "")
+      let c = b.then(s => s.length)
